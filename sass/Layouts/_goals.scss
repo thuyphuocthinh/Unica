@@ -1,0 +1,129 @@
+.goals {
+    .goals-container {
+        .goals-content {
+            .goals-item {
+                position: relative;
+                border: $border-radius-1;
+                margin-bottom: $mg-2;
+                .goals-item__img {
+                    width: 100%;
+                    height: 290px;
+                    border-radius: $border-radius-1;
+                }
+                .goals-item__img--small {
+                    height: 180px;
+                }
+                .goals-desc {
+                    display: flex;
+                    // align-items: center;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 10px;
+                    color: $white-color-0;
+                    z-index: 2;
+                    .goals-desc__icon {
+                        width: 50px;
+                        height: 50px;
+                        display: inline-block;
+                        // border: 1px solid $white-color-0;
+                        padding: $pd-2 - 2;
+                        border-radius: $border-radius-1;
+                    }
+                    .goals-text {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: $mg-3;
+                        .goals-text__title {
+                            font-size: $fs-4;
+                            font-weight: bold;
+                        }
+                        .goals-text__quantity {
+                            font-size: $fs-7;
+                        }
+                    }
+                }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-image: linear-gradient(to bottom, rgba(217, 217, 217, 0), rgba(43, 43, 43, 0.7));
+                    width: 100%;
+                    border-radius: $border-radius-1;
+                }
+                &:hover {
+                    box-shadow:
+                        0 4px 8px #62b0fd,
+                        0 4px 12px rgba(0, 0, 0, 0.08);
+                    cursor: pointer;
+                    border-radius: $border-radius-1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .goals {
+        .goals-container {
+            .goals-content {
+                .goals-item {
+                    .goals-desc {
+                        .goals-text {
+                            .goals-text__title {
+                                font-size: $fs-5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .goals {
+        .goals-container {
+            .goals-content {
+                .goals-item {
+                    .goals-desc {
+                        left: 0;
+                        .goals-desc__icon {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .goals {
+        .goals-container {
+            .goals-content {
+                .goals-item {
+                    .goals-desc {
+                        .goals-desc__icon {
+                            display: none;
+                        }
+                        .goals-text {
+                            margin-left: 0;
+                            .goals-text__title {
+                                font-size: $fs-7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .height-xs {
+        height: 200px !important;
+    }
+}

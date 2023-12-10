@@ -1,0 +1,42 @@
+.teachers {
+    .teachers-container {
+        .teachers-carousel {
+            .owl-nav,
+            .owl-dots {
+                display: none;
+            }
+            .teachers-item {
+                background-color: $white-color-0;
+                text-align: center;
+                min-height: 317px;
+                border-radius: $border-radius-1;
+                padding: $pd-1 + 5 0 0;
+                box-shadow: 0 0 5px 0 rgba(24, 158, 236, .2);
+                .teachers-item__img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+                    margin: 0 auto;
+                }
+                .teachers-text {
+                    .teachers-name {
+                        display: block;
+                        margin: $mg-1 0;
+                        font-size: $fs-2;
+                        color: $blue-color-0;
+                        font-weight: 500;
+                    }
+                    .teachers-title {
+                        font-size: $fs-5;
+                        margin: $mg-1 $mg-4;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 5px 7px 0 rgba(24, 158, 236, .7);
+                }
+            }
+        }
+    }
+}

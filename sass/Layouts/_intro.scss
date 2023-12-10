@@ -1,0 +1,213 @@
+.intro {
+    .intro-container {
+        .intro-menu {
+            // padding: 0;
+            .intro-list {
+                border-radius: $border-radius-1;
+                box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+                background-color: $white-color-0;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0;
+                position: relative;
+                .intro-item {
+                    .intro-link {
+                        color: $black-color-0;
+                        padding: $pd-3;
+                        display: block;
+                        font-size: $fs-5;
+                        width: 100%;
+                        text-align: left;
+                        .intro-link__icon {
+                            margin-right: $mg-4 + 2;
+                            text-align: center;
+                            width: 10px;
+                        }
+                    }
+                    .megadrop {
+                        position: absolute;
+                        z-index: 2;
+                        top: 0;
+                        left: 100%;
+                        bottom: 0;
+                        width: 100%;
+                        min-height: 100%;
+                        display: none;
+                        animation: popUp linear 0.1s;
+                        .megadrop-list {
+                            height: 100%;
+                            background-color: $white-color-0;
+                            .megadrop-item {
+                                .megadrop-link {
+                                    display: block;
+                                    padding: $pd-3;
+                                    font-size: $fs-5;
+                                    color: $black-color-0;
+                                    &:hover {
+                                        background-color: $black-color-10;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        background-color: $black-color-14;
+                    }
+                    &:hover .megadrop {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .intro-carousel {
+            position: relative;
+            .owl-nav {
+                display: none;
+            }
+            .owl-dots {
+                position: absolute;
+                bottom: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                .owl-dot {
+                    span {
+                        width: 16px;
+                        height: 16px;
+                        background-color: transparent;
+                        border: 1px solid $white-color-0;
+                        margin: $mg-4 - 2;
+                    }
+                    &.active {
+                        span {
+                            background-color: $organe-color-0;
+                        }
+                    }
+                }
+            }
+            .owl-stage-outer {
+                .owl-stage {
+                    .owl-item {
+                        .item {
+                            .intro-carousel__img {
+                                height: 372px;
+                                border-radius: $border-radius-1;
+                                box-shadow:
+                                    0 2px 4px rgba(0, 0, 0, 0.08),
+                                    0 4px 12px rgba(0, 0, 0, 0.08);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .intro {
+        .intro-container {
+            .row {
+                .intro-slider {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 968px) {
+    .intro {
+        .intro-container {
+            .row {
+                .intro-carousel {
+                    .owl-dots {
+                        bottom: 10%;
+                    }
+                    .owl-stage-outer {
+                        .owl-stage {
+                            .owl-item {
+                                height: 300px;
+                                .item {
+                                    height: 100%;
+                                    object-fit: contain;
+                                    overflow: hidden;
+                                    .intro-carousel__img {
+                                        height: 100%;
+                                        object-fit: unset;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container, .container-sm {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro {
+        .intro-container {
+            .row {
+                .intro-carousel {
+                    .owl-dots {
+                        bottom: 10%;
+                    }
+                    .owl-stage-outer {
+                        .owl-stage {
+                            .owl-item {
+                                height: 250px;
+                                .item {
+                                    height: 100%;
+                                    object-fit: contain;
+                                    overflow: hidden;
+                                    .intro-carousel__img {
+                                        height: 100%;
+                                        object-fit: unset;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .intro {
+        .intro-container {
+            .row {
+                .intro-carousel {
+                    .owl-dots {
+                        bottom: 10%;
+                    }
+                    .owl-stage-outer {
+                        .owl-stage {
+                            .owl-item {
+                                height: 200px;
+                                .item {
+                                    height: 100%;
+                                    object-fit: contain;
+                                    overflow: hidden;
+                                    .intro-carousel__img {
+                                        height: 100%;
+                                        object-fit: unset;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

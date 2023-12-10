@@ -1,0 +1,23 @@
+// Helpers
+@import "./Helpers/variables";
+@import "./Helpers/mixin";
+
+// Base
+@import "./Base/reset";
+
+// Components
+@import "./Components/buttons";
+
+// Layouts
+@import "./Layouts/header";
+@import "./Layouts/intro";
+@import "./Layouts/courses";
+@import "./Layouts/goals";
+@import "./Layouts/categories";
+@import "./Layouts/reasons";
+@import "./Layouts/teachers";
+@import "./Layouts/banner";
+@import "./Layouts/footer";
+@import "./Layouts/mobileSearch";
+@import "./Layouts/solutions";
+@import "./Layouts/mobileCategories";

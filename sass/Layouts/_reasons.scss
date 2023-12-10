@@ -1,0 +1,31 @@
+.reasons {
+    .reasons-container {
+        .reasons-list {
+            // justify-content: space-evenly;
+            .reasons-item {
+                text-align: center;
+                .reasons-text {
+                    margin-top: $mg-3;
+                    font-size: $fs-2;
+                    color: $black-color-1;
+                    .reasons-title {
+                        font-weight: 500;
+                    }
+                    .reasons-desc {
+                        font-size: $fs-5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .reasons {
+        .reasons-container {
+            .reasons-item ~ .reasons-item{
+                margin-top: $mg-0;
+            }
+        }
+    }
+}

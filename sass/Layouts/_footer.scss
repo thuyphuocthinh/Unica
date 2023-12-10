@@ -1,0 +1,99 @@
+.footer {
+    .footer-top {
+        background-color: $black-color-5;
+        padding-bottom: $pd-0;
+        .footer-top-container {
+            .footer-group {
+                .footer-logo {
+                    .footer-logo__img {
+                        width: 138px;
+                        height: 33px;
+                    }
+                    display: block;
+                    margin: $mg-2 0;
+                }
+                .footer-title {
+                    font-size: $fs-4;
+                    color: $organe-color-0;
+                    font-weight: 500;
+                    margin: $mg-0 - 5 0 $mg-2 - 2;
+                }
+                .footer-list {
+                    .footer-item {
+                        line-height: 30px;
+                        .footer-link {
+                            color: $white-color-0;
+                            font-size: $fs-5;
+                            .footer-link__icon {
+                                color: $organe-color-0;
+                                display: inline-block;
+                                width: 15px;
+                                margin-right: $mg-4 - 2;
+                            }
+                            &:hover {
+                                color: $organe-color-0;
+                            }
+                        }
+                    }
+                }
+                .footer-lang {
+                    select {
+                        background-color: transparent;
+                        width: 120px;
+                        height: 36px;
+                        border: 1px solid $white-color-0;
+                        color: $white-color-0;
+                        font-size: $fs-5;
+                        padding: $pd-3;
+                        border-radius: $border-radius-1;
+                        option {
+                            color: $black-color-0;
+                            background-color: $black-color-5;
+                            color: $white-color-0;
+                        }
+                    }
+                }
+                .footer-download {
+                    margin-top: $mg-1;
+                    .footer-download__appstore {
+                        display: inline-block;
+                        margin-bottom: $mg-1;
+                    }
+                    .footer-download__google {
+                        margin-bottom: $mg-1;
+                    }
+                }
+                .footer-media-title {
+                    margin: $mg-3 0 $mg-1;
+                }
+                .footer-media {
+                    .footer-facebook, .footer-youtube {
+                        display: inline-block;
+                        height: 36px;
+                        width: 36px;
+                        line-height: 36px;
+                        text-align: center;
+                        font-size: $fs-5;
+                        color: $white-color-0;
+                    }
+                    .footer-facebook {
+                        background-color: $blue-color-5;
+                        margin-right: $mg-4;
+                    }
+                    .footer-youtube {
+                        background-color: $blue-red-0;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        background-color: $black-color-12;
+        padding: $pd-1 0;
+        .footer-bottom__text {
+            font-size: $fs-5;
+            color: $white-color-0; 
+            line-height: 38px;
+        }
+    }
+}

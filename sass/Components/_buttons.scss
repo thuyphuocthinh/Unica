@@ -1,0 +1,29 @@
+/* button */
+.btn {
+    display: block;
+    box-sizing: border-box;
+    padding: $pd-2 - 3;
+    text-align: center;
+}
+
+.btn--orange {
+    background-color: $organe-color-0;
+    color: $white-color-0;
+    &:hover {
+        background-color: $organe-color-0;
+        color: $white-color-0;
+    }
+}
+
+.btn--gray {
+    background-color: $black-color-6;
+    color: $black-color-1;
+    &:hover {
+        background-color: $black-color-6;
+        color: $black-color-1;
+    }
+}
+
+.btn--transparent {
+    background-color: transparent;
+}

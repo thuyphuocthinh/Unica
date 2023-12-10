@@ -1,0 +1,89 @@
+.mobile-categories-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: $white-color-0;
+    overflow-y: auto;
+    width: 288px;
+    transform: translateX(-100%);
+    transition: .5s;
+    .mobile-categories-head {
+        text-align: center;
+        padding: $pd-1 0;
+        background-color: $black-color-10;
+        height: 10%;
+        .mobile-categories-head__img {
+            width: 110px;
+            height: 26px;
+        }
+        .mobile-categories-head__icon {
+            position: relative;
+            top: -5px;
+            right: 30px;
+            font-size: $fs-2 + .5rem;
+        }
+    }
+    .mobile-categories-body {
+        flex: 1 0 70%;
+        text-align: left;
+        .mobile-categories-item {
+            font-size: $fs-5;
+            color: $black-color-1;
+            padding: $pd-2;
+            .mobile-categories-link {
+                display: block;
+                .mobile-categories-link__icon {
+                    font-size: $fs-6;
+                    display: inline-block;
+                    width: 20px;
+                    margin-right: $mg-4 - 3;
+                }
+            }
+            &:hover {
+                background-color: $black-color-10;
+                cursor: pointer;
+            }
+        }
+    }
+    .mobile-categories-foot {
+        height: 20%;
+        border-top: 1px solid $black-color-10;
+        // margin-top: $mg-4;
+        padding-top: $pd-2;
+        .mobile-categories-support {
+            width: 90%;
+            height: 40px;
+            margin: 0 auto;
+            line-height: 40px;
+            text-align: center;
+            background-color: $black-color-6;
+            font-size: $fs-5;
+        }
+        .mobile-categories-phone, .mobile-categories-email {
+            text-align: left;
+            padding: $pd-2;
+            font-size: $fs-5;
+            i {
+                font-size: $fs-6;
+                width: 20px;
+                margin-right: $mg-4 - 3;
+            }
+        }
+    }
+}
+
+#mobile-categories {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    background-color: transparent;
+}
+
+#mobile-categories:checked ~ .mobile-categories-container {
+    transform: translateX(0);
+}

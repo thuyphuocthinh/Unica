@@ -1,0 +1,27 @@
+1. HEADER => DONE
+- CONTAINER => ROW => COL-...
+- DISPLAY: FLEX
+- POSITION: RELATIVE
+- STYLEFORM MIXIN
+- BTN CLASS, BTN--MODIFIED CLASSES
+
+2. INTRO => DONE
+- CONTAINER => ROW => COL-...
+- POSITION: ABSOLUTE
+- CAROUSEL
+- MIN-HEIGHT
+
+3. COURSES => Done
+4. Categories => Done
+5. Reasons => Done
+6. Teachers => Done
+7. Banner => Done
+8. Footer => Done
+
+Fix bug UI
+Responsive
+- Reponsive riêng cho iphone 5 
+=> Header button
+=> Goals - images
+=> Teachers - Nguyen phung phong
+=> Banner button

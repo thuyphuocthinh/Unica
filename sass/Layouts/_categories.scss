@@ -1,0 +1,43 @@
+.categories {
+    .categories-container {
+        .categories-list {
+            .categories-item {
+                margin: $mg-4 + 2.5 0;
+                .categories-item__link {
+                    display: block;
+                    border-radius: $border-radius-1;
+                    background-color: $white-color-0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: $pd-2 + 1 0;
+                    color: $black-color-1;
+                    font-size: $fs-5;
+                    .categories-item__icon {
+                        color: $black-color-11;
+                        font-size: $fs-0;
+                        display: inline-block;
+                        margin-bottom: $mg-3 - 2;
+                    }
+                    &:hover {
+                        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .categories {
+        .categories-container {
+            .categories-list {
+                .categories-item {
+                    .categories-item__link{
+                        font-size: $fs-7;
+                    }
+                }
+            }
+        }
+    }
+}
